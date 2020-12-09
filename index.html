@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Number one rated game World Wide...better than Sega, Atari, PlayStation, Xbox"
+    />
+    <meta
+      name="keywords"
+      content="Game, Fun, Atari, Xbox, Commodore 64, Dice"
+    />
+    <meta name="author" content="RingVision" />
+    <link rel="stylesheet" href="style-dice.css" />
+    <link rel="stylesheet" href="style-btn.css" />
+    <title>The Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Dice Game</h1>
+      <button onclick="rollDice()" class="button">Roll Dice</button>
+      <div class="dice-area">
+        <!-- The "rollDice" function fills this area with dice -->
+        <!-- <div id="dice" class="dice dice--1">
+          <div class="dot dot-1"></div>
+        </div> -->
+      </div>
+
+      <!-- TODO update action -->
+      <form action="" method="post">
+        <fieldset class="score-section">
+          <legend>Player One Score:</legend>
+          <div>
+            <label for="dice-total">Total Score:</label>
+            <input type="text" id="dice-total" value="0" readonly />
+          </div>
+
+          <div>
+            <label for="number-rolls">Rolls Remaining:</label>
+            <input type="text" id="number-rolls" value="6" readonly />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
