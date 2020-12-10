@@ -28,7 +28,7 @@
       </div>
 
       <!-- TODO update action -->
-      <form action="" method="post">
+      <form action="">
         <fieldset class="score-section">
           <legend>Player One Score:</legend>
           <div>
@@ -41,7 +41,23 @@
             <input type="text" id="number-rolls" value="6" readonly />
           </div>
 
+          <div>
+            <label for="ind-game-count">Total Games Played:</label>
+            <input type="text" id="ind-game-count" value="0" readonly />
+          </div>
+
+          <div>
+            <label for="start-points">Starting Points:</label>
+            <input type="text" id="start-points" value="50" readonly />
+          </div>
+
           <!-- TODO add refresh button /  submit points before 20 or before rolls = 0 -->
+          <div>
+            <button onclick="newGame()" class="button restart-btn">
+              Restart
+            </button>
+            <button onclick="exitGame()" class="button exit-btn">Exit</button>
+          </div>
         </fieldset>
       </form>
     </div>
